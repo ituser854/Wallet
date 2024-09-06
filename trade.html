@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trade Transactions</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #141414;
+            padding: 20px;
+            text-align: center;
+            color: #ffc800;
+            font-size: 28px;
+        }
+        .container {
+            padding: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #ccc;
+        }
+        th {
+            background-color: #333;
+            color: white;
+        }
+        td {
+            background-color: #fff;
+        }
+        .back-btn {
+            display: block;
+            margin: 20px 0;
+            padding: 15px 25px;
+            background-color: #ffc800;
+            color: white;
+            text-align: center;
+            border-radius: 8px;
+            text-decoration: none;
+            width: 150px;
+        }
+        .back-btn:hover {
+            background-color: #e6b800;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">Trade Transactions</div>
+
+    <div class="container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Buy/Sell</th>
+                    <th>Amount</th>
+                    <th>Currency</th>
+                    <th>Euro Equivalent</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>2024-09-05</td>
+                    <td>Buy</td>
+                    <td>1.000</td>
+                    <td>BTC</td>
+                    <td>€40,000</td>
+                    <td>Completed</td>
+                </tr>
+                <tr>
+                    <td>2024-09-06</td>
+                    <td>Sell</td>
+                    <td>5.000</td>
+                    <td>ETH</td>
+                    <td>€9,000</td>
+                    <td>Pending</td>
+                </tr>
+                <tr>
+                    <td>2024-09-07</td>
+                    <td>Buy</td>
+                    <td>300.000</td>
+                    <td>XRP</td>
+                    <td>€3,000</td>
+                    <td>Completed</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Back to Wallet Button -->
+        <a href="wallet.html" class="back-btn">Back to Wallet</a>
+    </div>
+
+</body>
+</html>

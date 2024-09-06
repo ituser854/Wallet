@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Market Trends</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #141414;
+            padding: 20px;
+            text-align: center;
+            color: #ffc800;
+            font-size: 28px;
+        }
+        .container {
+            padding: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #ccc;
+        }
+        th {
+            background-color: #333;
+            color: white;
+        }
+        td {
+            background-color: #fff;
+        }
+        .crypto-trend {
+            text-align: right;
+            font-weight: bold;
+            color: green;
+        }
+        .crypto-trend.negative {
+            color: red;
+        }
+        .back-btn {
+            display: block;
+            margin: 20px 0;
+            padding: 15px 25px;
+            background-color: #ffc800;
+            color: white;
+            text-align: center;
+            border-radius: 8px;
+            text-decoration: none;
+            width: 150px;
+        }
+        .back-btn:hover {
+            background-color: #e6b800;
+        }
+        .nav {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #2d2d2d;
+            display: flex;
+            justify-content: space-around;
+            padding: 15px 0;
+        }
+        .nav a {
+            color: #fff;
+            text-decoration: none;
+            text-align: center;
+        }
+        .nav a:hover {
+            color: #ffc800;
+        }
+        .nav-icon {
+            display: block;
+            font-size: 20px;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">Market Trends</div>
+
+    <div class="container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Cryptocurrency</th>
+                    <th>Price (EUR)</th>
+                    <th>24h Change (%)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Bitcoin (BTC)</td>
+                    <td>€40,000</td>
+                    <td class="crypto-trend">+2.5%</td>
+                </tr>
+                <tr>
+                    <td>Ethereum (ETH)</td>
+                    <td>€1,800</td>
+                    <td class="crypto-trend negative">-1.2%</td>
+                </tr>
+                <tr>
+                    <td>Ripple (XRP)</td>
+                    <td>€1.00</td>
+                    <td class="crypto-trend">+4.0%</td>
+                </tr>
+                <tr>
+                    <td>Litecoin (LTC)</td>
+                    <td>€150</td>
+                    <td class="crypto-trend negative">-0.8%</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <a href="wallet.html" class="back-btn">Back to Wallet</a>
+    </div>
+
+    <!-- Navigation Bar -->
+    <div class="nav">
+        <a href="#"><span class="nav-icon">🏠</span>Home</a>
+        <a href="markets.html"><span class="nav-icon">📊</span>Markets</a>
+        <a href="wallet.html"><span class="nav-icon">💼</span>Wallet</a>
+        <a href="#"><span class="nav-icon">⚙️</span>Settings</a>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Wallet Design</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #141414;
+            padding: 20px;
+            text-align: center;
+            color: #ffc800;
+            font-size: 28px;
+        }
+        .container {
+            padding: 20px;
+        }
+        .balance {
+            background-color: #2d2d2d;
+            color: white;
+            padding: 25px;
+            border-radius: 8px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .balance h2 {
+            margin: 0;
+            font-size: 42px;
+        }
+        .actions {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 30px;
+        }
+        .actions button {
+            flex: 1;
+            margin: 10px;
+            padding: 20px;
+            font-size: 18px;
+            border: none;
+            border-radius: 8px;
+            background-color: #ffc800;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .actions button:hover {
+            background-color: #e6b800;
+        }
+        .portfolio {
+            background-color: #fff;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .portfolio h3 {
+            margin-bottom: 15px;
+            font-size: 22px;
+        }
+        .crypto-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+        .crypto-item p {
+            margin: 0;
+            font-size: 18px;
+        }
+        .nav {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #2d2d2d;
+            display: flex;
+            justify-content: space-around;
+            padding: 15px 0;
+        }
+        .nav a {
+            color: #fff;
+            text-decoration: none;
+            text-align: center;
+        }
+        .nav a:hover {
+            color: #ffc800;
+        }
+        .nav-icon {
+            display: block;
+            font-size: 20px;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">Cryptocurrency Wallet</div>
+
+    <div class="container">
+        <!-- Balance Section -->
+        <div class="balance">
+            <h2>Total Balance: $5,234.22</h2>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="actions">
+            <a href="deposits.html">
+                <button>Deposit</button>
+            </a>
+            <a href="withdraws.html">
+                <button>Withdraw</button>
+            </a>
+            <a href="trade.html">
+                <button>Trade</button>
+            </a>
+        </div>
+
+        <!-- Portfolio Section -->
+        <div class="portfolio">
+            <h3>Your Portfolio</h3>
+            <div class="crypto-item">
+                <p>BTC: 1.234</p>
+                <p>€50,000.00</p>
+            </div>
+            <div class="crypto-item">
+                <p>ETH: 10.123</p>
+                <p>€18,000.00</p>
+            </div>
+            <div class="crypto-item">
+                <p>XRP: 500.123</p>
+                <p>€5,000.00</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <div class="nav">
+        <a href="#"><span class="nav-icon">🏠</span>Home</a>
+        <a href="#"><span class="nav-icon">📊</span>Markets</a>
+        <a href="#"><span class="nav-icon">💼</span>Wallet</a>
+        <a href="#"><span class="nav-icon">⚙️</span>Settings</a>
+    </div>
+
+</body>
+</html>
